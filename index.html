@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realaasti — Homes, Plots &amp; Commercial Property</title>
+  <meta name="description" content="Realaasti helps you buy, sell and rent apartments, houses, villas, plots and commercial property across Andhra Pradesh and Telangana.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" aria-label="Realaasti home">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>Real<b>aasti</b></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#/properties?purpose=sale" data-nav="sale">Buy</a>
+        <a href="#/properties?purpose=rent" data-nav="rent">Rent</a>
+        <a href="#/properties?type=Plot" data-nav="plots">Plots</a>
+        <a href="#/saved" data-nav="saved">Saved <span class="badge" id="saved-count" hidden>0</span></a>
+        <a href="#/contact" data-nav="contact">Contact</a>
+        <a href="#/post" class="btn btn-accent btn-sm" data-nav="post">Post Property <small>FREE</small></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#/" class="logo logo-light"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Real<b>aasti</b></span></a>
+        <p>Your trusted place to find the right aasti — homes, plots and commercial spaces across Andhra Pradesh &amp; Telangana.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#/properties?purpose=sale">Properties for sale</a>
+        <a href="#/properties?purpose=rent">Properties for rent</a>
+        <a href="#/properties?type=Plot">Open plots</a>
+        <a href="#/properties?type=Commercial">Commercial</a>
+      </div>
+      <div>
+        <h4>Cities</h4>
+        <div id="footer-cities"></div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#/post">Post your property</a>
+        <a href="#/contact">Contact us</a>
+        <a href="#/saved">Saved properties</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Realaasti. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
